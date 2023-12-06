@@ -12,19 +12,17 @@
 #navbar {
     display: flex;
     justify-content: space-between;
-    height: 75px;
+    height: 20%;
     background-color: rgb(232, 234, 235);
     width: 100%;
     padding: 0px 80px;
 }
-
 #logo {
-    background-color: black;
-    border-radius: 20%;
+    max-width: 80px;
 }
 
 #logo img {
-    height: 60px;
+    max-height: 60px;
     border-top-left-radius: 20%;
     border-bottom-left-radius: 40%;
     border-top-right-radius: 50%;
@@ -41,7 +39,7 @@
     float: left;
     list-style: none;
     padding: 4px;
-    margin-top: 15px;
+    margin-top: 2.2%;
 }
 
 .a-primary,
@@ -51,7 +49,7 @@
     color: black;
     text-transform: uppercase;
     font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
+    font-size: 0.90rem;
     display: inline-block;
 }
 
@@ -69,10 +67,15 @@ ul li a:hover,
     height: 520px;
     padding: 50px 60px 20px 60px;
     color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-
+#location h1{
+    font-size: 3.8rem;
+    text-align: left;
+}
 .h-primary {
-    font-size: 4.5rem;
     text-transform: uppercase;
     font-family: 'Roboto', sans-serif;
     padding: 10px;
@@ -80,24 +83,26 @@ ul li a:hover,
 }
 
 #location p {
+    text-align:left;
     letter-spacing: 0.4px;
-    font-size: 1.2rem;
+    font-size: 0.98rem;
     padding: 0px 20px;
 }
 
 #buttons {
     display: flex;
     align-items: center;
-    height: 150px;
+    height: 120px;
     width: 100%;
 }
 
 .a-btn {
-    padding: 20px 55px;
+    padding: 1.75% 4%;
     background-color: white;
     border-radius: 35px;
-    font-size: 14px;
+    font-size: 0.80rem;
     margin: 8px;
+    
 }
 
 .a-btn:hover {
@@ -125,7 +130,9 @@ ul li a:hover,
     margin: 30px 25px 40px 25px;
     flex-wrap: wrap;
 }
-
+.item-c1{
+    margin-top: 10px;
+}
 .item-c1 img {
     height: 208px;
     width: 208px;
@@ -232,6 +239,10 @@ strike {
 }
 
 /* Message section */
+#message{
+    width: 80%;
+    margin: 0 auto;
+}
 h3 {
     font-family: 'Nunito', sans-serif;
     text-align: center;
@@ -243,8 +254,8 @@ h3 {
 #message-box {
     margin: 0px auto;
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, .5);
-    width: 570px;
-    height: 750px;
+    width: 62%;
+    height: 730px;
     padding: 30px;
 }
 
