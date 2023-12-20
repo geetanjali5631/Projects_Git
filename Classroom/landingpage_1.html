@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fly makes you faster</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body {
+            background-image: linear-gradient(to bottom left, rgb(112, 227, 248), rgb(73, 73, 234));
+            font-style: normal;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+
+        .heading {
+            margin: 0px auto;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 10px;
+            padding-bottom: 20px;
+        }
+
+        blockquote {
+            font-size: 22px;
+            text-shadow: 1px 1px 1px rgb(170, 164, 156);
+            display: inline;
+            margin: 10px 60px;
+            padding: 10px;
+        }
+       blockquote:hover{
+        cursor: pointer;
+        color: blue;
+       }
+        .navbar {
+            margin: 10px auto;
+            padding: 8px 30px;
+            position: fixed;
+            top: 10px;
+            right: 35px;
+            z-index: 10;
+        }
+
+        ul li{
+            display: inline-block;
+            letter-spacing: 0.1em;
+            text-shadow: 1px 1px 1px rgb(170, 164, 156);
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+        }
+        li a{
+            text-decoration: none;
+            color: white;
+            margin: 10px 15px;
+            padding: 4px;
+        }
+        li button{
+            border-radius: 5px;
+            background-color:transparent;
+            box-shadow: 1px 2px 2px rgb(19, 92, 226);
+            border: 1px solid whitesmoke;
+            height: 32px;
+            width: 130px;
+            color: white;
+            text-shadow: 1px 1px 1px rgb(170, 164, 156);
+        }
+        li button:hover , a:hover{
+            border-radius: 5px;
+            background-color:black ;
+            box-shadow: 2px 2px 5px 5px cyan;
+        }
+        .mainarea {
+            margin: 40px 20px;
+            display: flex;
+            justify-content: space-between;
+            margin: 50px 38px;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .one {
+            width: 50%;
+            margin: auto 20px;
+        }
+
+        .one h2 {
+            font-size: 60px;
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        .one p {
+            letter-spacing: 0.1em;
+            padding: 10px;
+            margin: 10px;
+            line-height: 30px;
+        }
+        #price button {
+            padding: 12px 35px;
+            border-radius: 25px;
+            margin: 10px;
+            border: transparent;
+        }
+
+        .two {
+            width: 50%;
+        }
+        .two form{
+            background-color: white;
+            margin: 10px auto;
+            padding: 40px 45px;
+            border-radius: 5px;
+            width: 64%;
+        }
+        form:hover{
+            cursor: pointer;
+        }
+        .signup{
+            color: black;
+            display: block;
+            text-align: center;
+            font-size: 28px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        form label{
+            /* margin: 10px auto; */
+        }
+        form label input , select{
+            margin: 10px auto;
+            width: 345px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #dedede;
+            border: 0.5px solid rgb(230, 226, 226);
+            padding: 0px 10px;
+            font-size: 15px;
+        }
+        label input:hover , select:hover{
+            background-color:rgb(178, 244, 172) ;
+        }
+        select{
+            width: 365px;
+        }
+        .reg button{
+            margin: 10px auto;
+            width: 365px;
+            height: 40px;
+            border-radius: 30px;
+            background-color: rgb(21, 126, 255);
+            box-shadow: 1px 2px 5px 2px rgb(133, 211, 247);
+            border: none;
+            padding: 0px 10px;
+            font-size: 18px;
+            color: white;
+            text-shadow: 0.5px 0.5px rgb(244, 239, 239);
+        }
+        .reg button:hover{
+            background-color: rgb(118, 242, 107);
+        }
+    </style>
+</head>
+
+<body>
+    <header class="heading">
+        <blockquote>Landing-1</blockquote>
+        <div class="navbar">
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Feature</a></li>
+                <li> <a href="#">Reviews</a></li>
+                <li> <a href="#">Pricing</a></li>
+                <li> <a href="#">FAQ</a></li>
+                <li><button id="btn">Get Started</button></li>
+            </ul>
+        </div>
+    </header>
+    <main class="mainarea">
+        <section class="one">
+            <h2>Fly makes you faster</h2>
+            <p>Lorem ipsum dolor sit amet consectetur       adipisicing elit. Deserunt omnis recusandae cum accusantium
+            dolorem voluptate, blanditiis culpa sit </p>
+            <label for="pricing" id="price"><button>SEE PRICING</button></label>
+        </section>
+        <section class="two">
+            <form action="#">
+                <span class="signup">Sign Up for Free</span>
+                <label for="name"><input type="text" placeholder="Full name" required></label>
+                <label for="email"><input type="email" placeholder="Email" required></label>
+                <label for="number"><input type="number" placeholder="Phone Number" required></label>
+                <select name="options" id="selection">
+                    <option value="0" selected>Type</option>
+                    <option value="1">2, 3, 4 bhk Apartment</option>
+                    <option value="2">Duplex Apartments</option>
+                    <option value="3">Studio Apartment</option>
+                    <option value="4">Row Houses</option>
+                    <option value="5">Gated Communities</option>
+                </select>
+                <label for="registration" class="reg"><button>Register</button></label>
+            </form>
+        </section>
+    </main>
+</body>
+
+</html>

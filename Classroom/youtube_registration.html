@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Here</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: #202020;
+        }
+
+        main {
+            background: linear-gradient(to right, #ff5a20, #ff9700);
+            margin: 0px auto;
+            padding: 50px;
+            width: 1000px;
+            /* height: 545px; */
+            height: fit-content;
+        }
+
+        .register {
+            display: flex;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px 30px 40px 100px;
+            height: 420px;
+            padding: 20px;
+        }
+
+        ul {
+            margin: auto 0px;
+            height: 260px;
+            width: 350px;
+            text-align: center;
+            color: #fff9e0;
+            text-transform: capitalize;
+        }
+
+        li {
+            list-style-type: none;
+            padding: 10px;
+        }
+
+        li h5 {
+            font-size: 28px;
+            font-weight: bold;
+            margin: 5px;
+        }
+
+        li p {
+            font-size: 15px;
+            line-height: 1.5em;
+            font-size: 13px;
+            /* padding: 5px; */
+        }
+
+        li button {
+            background-color: white;
+            border-color: transparent;
+            padding: 10px;
+            width: 100px;
+            border-radius: 20px;
+            color: #202020;
+        }
+
+        li button:hover {
+            /* font-size: 20px; */
+            background-color: #bab0ad;
+        }
+
+        #form1 {
+            width: 500px;
+            margin: 25px 35px;
+            padding: 25px;
+            background-color: rgb(238, 238, 238);
+            border-top-left-radius: 50px 250px;
+            border-bottom-left-radius: 50px 250px;
+            height: fit-content;
+        }
+
+        .register h2 {
+            text-align: center;
+            text-transform: capitalize;
+            margin: 25px;
+            color: #625656;
+            text-shadow: 0.5px 0.5px #ab9c9c;
+        }
+
+        input {
+            height: 32px;
+            width: 380px;
+            margin: 6px;
+            padding: 0px 8px;
+            border-radius: 0.5px;
+            border: 1px solid rgb(234, 228, 228);
+        }
+
+        form input:hover {
+            border: 1px groove #614f48;
+        }
+
+        form button:hover {
+            font-size: 20px;
+        }
+
+        #regi_button {
+            color: white;
+            background-color: #ff9700;
+            border: 1px solid #eea12dce;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 20%;
+            margin-left: 72%;
+            height: 40px;
+            width: 100px;
+            border-radius: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="mainpage">
+        <div class="register">
+            <ul class="list">
+                <li id="character"><span style='font-size:100px;'>&#9660;</span></li>
+                <li>
+                    <h5>join us</h5>
+                </li>
+                <li>
+                    <p>subscribe easy tutorials youtube channel to watch more videos</p>
+                </li>
+                <li><button> About us </button></li>
+            </ul>
+            <form action="notavailable.php" id="form1">
+                <h2>register here</h2>
+                <input type="text" name="name" placeholder="Name">
+                <input type="text" name="username" placeholder="Username">
+                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="password" name="pass" id="password" placeholder="Password">
+                <button id="regi_button" style="color: #fff9e0;">Register</button>
+            </form>
+
+        </div>
+    </main>
+</body>
+
+</html>

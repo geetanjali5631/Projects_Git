@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Devloper - Landing Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        /* HERO SECTION */
+        #hero {
+            background-color: black;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('./Images_for_Proj/BG.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+            height: 75vh;
+            width: 100%;
+            text-align: left;
+            padding: 80px;
+            font-family: Arial, Helvetica, sans-serif;
+            word-spacing: 0.4em;
+        }
+
+        .h-primary {
+            font-size: 4rem;
+            display: block;
+            margin: 30px auto;
+            padding: 5px 20px;
+            width: 80%;
+            line-height: 1.1em;
+        }
+
+        span {
+            font-size: 1.3rem;
+        }
+        /* work i can do for you */
+        #hero-frame {
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            height: 88px;
+            color: white;
+            /* border: 1px solid white; */
+            margin: 33px auto;
+        }
+        /* HOME SECTION */
+        #container{
+            background-color: white;
+            display: flex;
+            padding: 30px;
+            /* width: 70%; */
+            justify-content: center;
+        }
+        .box{
+            width: 280px;
+            /* height: 430px; */
+            margin: 10px;
+            border-radius: 5px 5px 5px 5px;
+            box-shadow: 0.85px 1px 1px 2px rgb(162, 159, 159);
+        }
+        .box img{
+            height: 180px;
+            width: 280px;
+            border-radius: 5px 5px 0px 0px;
+        }
+        .box h2{
+            margin: 20px 20px;
+        }
+        .box p{
+            font-size: 0.96rem;
+            margin: 20px;
+        }
+
+        .box:hover{
+            box-shadow: 2px 2px 3px 4px gray;
+        }
+        /* CONTACTS SECTION */
+        #knowme{
+            display: flex;
+            width: 100%;
+            color: white;
+        }
+        .me{
+            width: 50%;
+            padding: 30px 20px;
+        }
+        .me h3, .me p{
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="hero">
+        <h1 class="h-primary" id="hi">Hi,<span>i am Jasmine Taylor</span> <br> FULL STACK DEVELOPER</h1>
+    </section>
+    <h1 class="h-primary" id="hero-frame">WORK , I CAN DO FOR <B>YOU</B></h1>
+    <section id="home">
+        <div id="container">
+            <div class="box">
+                <img src="./Images_for_Proj/WD.jpeg" alt="img-1">
+                <h2>Web Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid non nesciunt, velit eveniet error excepturi quas porro voluptatem ea, reiciend ab reprehenderit dolorum perferendis neque quibusdam facere dolore, odio accusantium dolorem quia quae deserunt.</p>
+            </div>
+            <div class="box">
+                <img src="./Images_for_Proj/AD.jpg" alt="img-2">
+                <h2>App Development</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid non nesciunt, velit eveniet error excepturi quas porro voluptatem ea, reiciendis magnam ratione facilis debitis aut saepe aliquam autem rem? Eum ipsam expedita illo veritatis ipsa ab reprehenderit dolorum perferorem quia quae deserunt.</p>
+            </div>
+            <div class="box">
+                <img src="./Images_for_Proj/UXD.jpg" alt="img-3">
+                <h2>UI / UX</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid non nesciunt, velit eveniet error excepturi quas porro voluptatem ea, reiciendis magnam ratione facilis debitis aut saepe areprehenderit dolorum perferendis neque quibusdam facere dolore, odio accusantium dolorem quia quae deserunt.</p>
+            </div>
+        </div>
+    </section>
+    <section id="knowme">
+        <div class="me">
+            <h3>Contact Me</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sit placeat magni voluptates saepe nihil suscipit reprehenderit iste dolorem hic.</p>
+        </div>
+        <div class="me">
+            <h3>About Me</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sit placeat magni voluptates saepe nihil suscipit reprehenderit iste dolorem hic.</p>
+        </div>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zimbra</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        /* HEADER CSS */
+        .container1{
+            background-color: #ffffff;
+            padding: 12px 35px;
+            /* margin: ; */
+        }
+        .logo_class{
+            justify-content: space-between;
+            display: flex;
+            align-items: flex-end;
+        }
+        #search_btn{
+            width: 250px;
+            height: 45px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        /* MAIN PART-1 CSS */
+        nav{
+            background-color: #0087c3;
+            margin: 0px 0px 10px 0px;
+            height: 40px
+        }
+        .navbar li{
+            display: inline;
+            list-style: none;
+            font-weight: bold;
+            padding: 15px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        nav ul{
+            /* margin:20px 40px 20px 40px; */
+            background-color: #0087c3;
+            padding: 16px 40px;  
+        }
+        li a{
+            color: #ffffff;
+            text-decoration: none;
+        }
+        li:hover{
+            /* color: #f15b24; */
+            background-color: #f15b24;
+        }
+        #img_zim{
+            width: 100%;
+        }
+        /* MAIN PART-2 CSS */
+        .container3{
+            text-align: center;
+            font-size: 30px;
+            margin: 20px;
+            padding: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            /* letter-spacing: 0.1em; */
+        }
+        .container3 h3{
+            color: #f15922;
+            margin: 15px;
+        }
+        .container3 h4{
+            color: #848a97;
+            margin: 10px;
+        }
+        .container3 p{
+            font-size: 20px;
+            color: #9097a6;
+            margin: 15px;
+        }
+        #which_best{
+            font-size: 28px;
+        }
+        /* MIAN PART 3 CSS */
+    </style>
+</head>
+<body>
+    <!-- HEADER, LOGO AND SEARCH BAR -->
+    <header class="container1">
+        <div class="logo_class">
+            <img src="../images/zimbra-logo-color-282-1.png" alt="Zimbra_logo" id="main_logo">
+            <input type="search" name="Search" id="search_btn" placeholder="Search...">
+        </div>
+    </header>
+    <!-- MAIN PART  -->
+    <main class="container2">
+        <!-- MAIN PART 1, NAVIGATION BAR AND MAIN IMAGE -->
+        <nav class="navigation">
+            <ul class="navbar">
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Customers</a></li>
+                <li><a href="#">Downloads</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Try</a></li>
+            </ul>
+        </nav>
+        <img id="img_zim" src="../images/Zimbra-10_HomePgBanner_Desktop-FA-scaled.jpg" alt="Zimbra main image">
+        <!-- MAIN PART 2, CONTENT BELOW MAIN IMAGE , 3-4 LINES -->
+        <div class="container3">
+            <h3>Looking for the best...</h3>
+        <h4>Adaptability</h4>
+        <p id="p1">(Great! You’re in the right place.)</p>
+        <h3 id="which_best">Which Zimbra product is right for you?</h3>
+        </div>
+        <!-- MAIN PART 3 , 2 CARDS WITH IMAGE LINKS-->
+        <!-- <div class="cards">
+            <span class="span1">
+                <a href="/Html&CSS_practice_sets and other/APJ-tribute.html"> <img src="/images/Homepage-product-Z9-icon-300x239.png" alt="image_link"></a>
+                <h3 class="span1_h3">On-Prem or Cloud</h3>
+                <ul class="span1_ul">
+                    <li>Can be customized</li>
+                    <li>data soverganity</li>
+                </ul>
+                <a href="#" class="span1_link">Start your free trial</a>
+            </span>
+            <span class="span2">
+                <a href="/Html&CSS_practice_sets and other/APJ-tribute.html"><img src="/images/Homepage-product-Zpartners-icon-300x239.png" alt="image_link"></a>
+                <h3 class="span2_h3">To Resell Zimbra</h3>
+                <ul class="span2_ul">
+                    <li>Zimbra Partners</li>
+                    <a href="#" class="span2_link">Become A Partner</a>
+                </ul>
+            </span>
+        </div> -->
+    </main>
+</body>
+</html>

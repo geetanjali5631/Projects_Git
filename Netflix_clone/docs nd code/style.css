@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@500;700&display=swap');
+
+/* MEDIA QUERY STARTS */
+/* email & get started : 450px DONE */
+/* wrap is working for context till 570px */
+/* container-video nd image 650px */
+/* faqs 585px */
+/* grid is perfect till 540px*/
+/* MWDIA QUERY ENDS */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("./netflixbackground.jpg");
+    height: 115vh;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    /* background-size: max(1200px, 100vw); */
+    background-size: cover;
+}
+
+.main .box {
+    height: 115vh;
+    width: 100%;
+    opacity: 0.69;
+    background: radial-gradient(closest-side, #0000009f, #000000);
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 75vw;
+    margin: auto;
+    height: 70px;
+    padding-top: 8px;
+}
+
+nav img {
+    width: 145px;
+    position: relative;
+    z-index: 10;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 62px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    position: relative;
+    gap: 23px;
+    padding: 0 30px;
+    font-family: 'Martel Sans', sans-serif;
+    margin-bottom: -16px;
+}
+
+/* we have used .hero '>' symbol to denote immediate nth child, otherwise same css will apply to another div's nth of this class's nth child too*/
+.hero> :nth-child(1) {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    max-width: 70vw;
+}
+
+.hero> :nth-child(2) {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.hero> :nth-child(3) {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.separation {
+    height: 7px;
+    background-color: rgb(42, 40, 40);
+}
+
+/* Buttons */
+.lanselect {
+    color: white;
+    background-color: #2d2d2d;
+    border: 1px solid white;
+    max-width: 100px;
+    text-align: center;
+    border-radius: 4px;
+    padding: 6px 25px;
+    cursor: pointer;
+}
+
+.lanselect:hover {
+    background-color: #000000;
+}
+
+.btn {
+    padding: 6px 40px 4px 8px;
+    background-color: transparent;
+    color: white;
+    border: 0.5px solid rgba(126, 125, 125, 0.751);
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0px 5px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.hero-buttons input {
+    padding: 18px 21px;
+    font-size: 14px;
+    background-color: rgba(24, 24, 24, 0.664);
+    border: 1px solid rgba(246, 238, 238, 0.5);
+    color: white;
+    border-radius: 4px;
+    max-width: 350px;
+}
+
+@media (max-width: 450px) {
+    .hero-buttons input {
+        padding: 8px 11px;
+        font-size: 8px;
+        max-width: 120px;
+    }
+
+    .hero-buttons .btn-red {
+        padding: 8px 7px;
+        font-size: 8px;
+    }
+
+    /* these r crossing theor borders after 270px */
+}
+
+.hero-buttons input:hover,
+.btn-red:hover {
+    border: 2px solid white;
+}
+
+.btn-red {
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #e50914;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 24px;
+    border: none;
+}
+
+.btn-red-sm {
+    background-color: #e50914;
+    color: white;
+    padding: 6.5px 15px;
+    border: transparent;
+}
+
+/* VIDEO SECTIONS */
+/* section 1 */
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* padding: 40px; */
+    margin: 0px auto;
+    /* max-width: 75vw; */
+    /* border: 5px double rgb(226, 112, 112); */
+    color: white;
+    min-height: 80vh;
+    flex-wrap: wrap;
+}
+
+.context {
+    /* border: 1px solid whitesmoke; */
+    max-width: 35%;
+    word-wrap: normal;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    .context {
+        max-width: 90%;
+    }
+
+    .context h2 {
+        font-size: 1.8rem;
+    }
+
+    .context p {
+        font-size: 0.8rem;
+    }
+}
+
+.secImg {
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+.secImg img {
+    position: relative;
+    width: 380px;
+    z-index: 10;
+    /* margin-top: 35px; */
+    /* border: 1px solid yellow; */
+}
+
+.secImg video {
+    position: absolute;
+    bottom: 73px;
+    right: 52px;
+    width: 298px;
+    /* border: 3px solid rgb(247, 14, 184); */
+}
+
+#vid2 video {
+    top: 24px;
+    left: 63px;
+    width: 240px;
+}
+
+@media (max-width: 400px) {
+    .secImg {}
+
+    .secImg img {
+        width: 240px;
+    }
+
+    .secImg video {
+        width: 170px;
+        top: 36px;
+        left: 32px;
+    }
+
+    #vid2 video {
+        width: 148px;
+        top: 17px;
+        left: 42px;
+    }
+}
+
+.heading2 {
+    font-size: 2.9rem;
+    font-weight: bolder;
+    padding: 10px 0px;
+    /* border: 2px dashed green; */
+}
+
+.para {
+    font-size: 1.4rem;
+    font-weight: bolder;
+    max-width: 500px;
+}
+
+.faq {
+    width: 70vw;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.faq h2 {
+    font-size: 46px;
+    font-weight: bolder;
+    padding: 12px 0px;
+    color: white;
+    text-align: center;
+}
+
+.faqs {
+    display: flex;
+    background-color: #2d2d2d;
+    padding: 20px 28px 22px 28px;
+    color: white;
+    font-size: 1.4rem;
+    height: 30px;
+    margin: 10px 0px;
+    justify-content: space-between;
+    font-weight: lighter;
+    cursor: pointer;
+    flex-wrap: wrap;
+}
+@media (max-width: 585px) and (min-width:350px){
+    .faqs{
+        font-size: 0.8rem;
+        height: 22px;
+        padding: 11px 20px 9px 20px;
+    }
+}
+@media (max-width: 350px){
+    .faqs{
+        font-size: 8px;
+        height: 16px;
+        padding: 5px 7px 1px 7px;
+    }
+    .faq h2{
+        font-size: 1rem;
+    }
+}
+.faqs:hover {
+    background-color: rgb(65, 65, 65);
+    transition: all 0.3s ease-in;
+}
+
+#membershipmsg {
+    margin: 50px auto;
+}
+
+#membershipmsg span {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 30px 0px 20px 0px;
+}
+
+footer {
+    max-width: 80vw;
+    margin: 0px auto;
+    padding: 40px 20px;
+    max-height: 50vw;
+    /* border: 2px solid whitesmoke; */
+}
+
+footer p {
+    color: white;
+    margin: 10px 50px;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* border: 1px solid orange; */
+    max-width: 90%;
+    margin: 40px auto;
+}
+
+.footer-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item a {
+    color: white;
+    margin: 8px 0px;
+    font-size: 14px;
+}
+
+#eng {
+    margin: 15px 0px;
+}
+@media (max-width: 530px){
+    .footer{
+        grid-template-columns: 1fr 1fr;
+    }
+    footer p{
+        font-size: 0.7rem;
+    }
+}

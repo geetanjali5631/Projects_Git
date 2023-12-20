@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mannu Music</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-image: url('../images/music-1106439_1280.jpg');
+            background-repeat: no-repeat;
+            font-family: 'Montserrat', sans-serif;
+            color: black;
+        }
+
+        header {
+            /* border: 2px solid red; */
+            display: flex;
+            padding: 20px 30px;
+            color: black;
+            justify-content: space-between;
+            width: 100%;
+            height: 40px;
+            background-color: whitesmoke;
+            position: fixed;
+            top: 0px;
+            z-index: 4;
+            
+            /* background-image: url('../images/pink_charrybloosm_dslr_pic_tree.jpg'); */
+            /* position: fixed;
+            top: 0px; */
+        }
+
+        .one,
+        .two {
+            /* border: 2px solid black; */
+            margin: 5px;
+            padding: 2px 10px;
+            height: 90px;
+            position: fixed;
+            top: 0px;
+        }
+        .two{
+            right: 40px;
+        }
+        .one img {
+            width: 100px;
+            border-radius: 30px;
+            position: fixed;
+            top: -5px;
+        }
+
+        blockquote {
+            font-weight: 400;
+            font-style: regular;
+            text-shadow: 1px 2px 1px rgb(74, 62, 62);
+            position: fixed;
+            top: 50px;
+        }
+
+        .two {}
+
+        ul li {
+            display: inline-block;
+            /* border: 1px solid red; */
+            margin: 10px 10px;
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        li a , ul button{
+            text-decoration: none;
+            color: black;
+            padding: 5px;
+            border: transparent;
+            border-radius: 5px;
+            box-shadow: 0.5px 0.5px 5px rgb(147, 196, 215);
+        }
+
+        ul button {
+            width: 120px;
+            height: 38px;
+            background-color: white;
+            font-size: 15px;
+            margin-left: 10px;
+            padding-left: 10px;
+        }
+        ul button:hover , li a:hover{
+            color: white;
+            background-color: orange;
+            cursor: pointer;
+        }
+        main {
+            /* border: 2px solid green; */
+            text-align: center;
+            margin: 100px auto;
+            padding: 50px 0px;
+        }
+
+        #presents {
+            text-transform: uppercase;
+            color: rgb(120, 113, 113);
+            letter-spacing: 0.2em;
+        }
+
+        .four {
+            align-items: center;
+            justify-content: center;
+        }
+
+        .four h1 {
+            font-size: 42px;
+            width: 600px;
+            margin: 10px auto;
+        }
+
+        #create {
+            color: rgb(122, 116, 116);
+            letter-spacing: 0.2em;
+            width: 620px;
+            margin: 10px auto;
+            padding: 10px;
+        }
+
+        .five {
+            display: flex;
+            justify-content: center;
+            /* border: 1px solid cyan; */
+            padding: 10px;
+        }
+
+        .five input,
+        .five button {
+            font-size: 16px;
+            width: 200px;
+            padding: 12px 12px;
+            border-radius: 5px;
+            border: transparent;
+        }
+
+        .five button {
+            color: white;
+            background-color: orange;
+        }
+
+        .user {
+            color: rgb(120, 113, 113);
+            margin: 10px auto;
+            /* border: 2px solid black; */
+            padding: 20px;
+            display: block;
+        }
+
+        footer {
+            /* border: 2px solid brown; */
+            padding: 70px;
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            /* justify-content: space-evenly; */
+        }
+
+        footer a {
+            width: 510px;
+            margin-bottom: 50px;
+            text-decoration: none;
+            padding: 20px 30px;
+
+        }
+        a img {
+            width: 500px;
+            padding: 0px 5px;
+            margin-top: 30px;
+            height: 320px;
+        }
+        .odd {
+            font-weight: bold;
+            padding: 0px 5px;
+            font-size: 23px;
+            width: 500px;
+            margin-top: 10px;
+            border-top: 1.2px solid black;
+            padding-top: 10px;
+        }
+        .even {
+            font-size: 18px;
+            color: rgb(83, 85, 86);
+            padding: 0px 5px;
+        }
+        div a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="head">
+        <section class="one">
+            <img src="../images/mannu music.png" alt="logo" id="logo">
+            <blockquote>Mannu Music</blockquote>
+        </section>
+        <div class="two">
+            <ul>
+                <li><a href="https://www.youtube.com/@mannumusic0391" id="port">Portfolio</a></li>
+                <li><a href="./landingpage_1.html">Library Work</a></li>
+                <li><a href="./landingpage_1.html">Learn</a></li>
+                <li><a href="./landingpage_1.html">About</a></li>
+                <li><a href="./landingpage_1.html">Contact</a></li>
+                <button id="twobtn">Explore</button>
+            </ul>
+        </div>
+    </header>
+    <main class="container">
+        <div class="four">
+            <p id="presents">Presents our service</p>
+            <h1>Help us improve bourncing & giveour best music</h1>
+            <p id="create">We Create custom music traps, background music, smashes,Bouncing and many more... </p>
+            <div class="five">
+                <label for="email"><input type="email" placeholder="Enter your email"></label>
+                <label for="button"><button>Subscribe</button>
+                </label>
+            </div>
+            <span class="user">Enjoyed by 50,000+ listners</span>
+        </div>
+    </main>
+    <footer class="foot">
+                <a href="#"  class="six" class="link">
+                    <p class="odd">As Good As It Gets</p>
+                    <p class="even">Full Score and Sound Design</p>
+                    <img src="../images/piano-1655558_1280.jpg" alt="Piano">
+                </a>
+                <a href="#"  class="seven" class="link">
+                    <p class="odd">Super League Advert 2023</p>
+                    <p class="even">Full Score and Sound Design</p>
+                    <img src="../images/audience-1835431_1280.jpg" alt="audience">
+                </a>
+                <a href="#"  class="eight" class="link">
+                    <p class="odd">Leeds Retail Association</p>
+                    <p class="even">Full Score and Sound Design</p>
+                    <img src="../images/musician-623362_1280.jpg" alt="musician">
+                </a>
+                <a href="#"  class="nine" class="link">
+                    <p class="odd">Kitzbühel Tourism Board</p>
+                    <p class="even">Full Score and Sound Design</p>
+                    <img src="../images/cello-7219171_1280.jpg" alt="cello">
+                </a>
+                <a href="#" class="ten" class="link">
+                    <p class="odd">Five Plus Advert</p>
+                    <p class="even">Full Score and Sound Design</p>
+                    <img src="../images/band-4823341_1280.jpg" alt="band">
+                </a>
+                <a href="#"  class="eleven" class="link">
+                    <p class="odd">Full Score and Sound Design</p>
+                    <p class="even">Sound Design</p>
+                    <img src="../images/grades-7312021_1280.jpg" alt="Grades">
+                </a>
+    </footer>
+</body>
+
+</html>
