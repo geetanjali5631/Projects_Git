@@ -1,0 +1,21 @@
+.music-player {
+  background-color: #f8afa9;
+}
+nav .circle {
+  box-shadow: 0 5px 10px rgba(250, 68, 68, 0.642);
+}
+.song-img {
+  box-shadow: 0 10px 60px rgba(250, 68, 68, 0.642);
+}
+.music-player h1 , .music-player p ,nav .circle {
+    color: #f31f1f;
+}
+#progress::-webkit-slider-thumb{
+    box-shadow: 0 5px 5px rgba(250, 68, 68, 0.642);
+}
+.controls div{
+    box-shadow: 0 10px 20px rgba(250, 68, 68, 0.642);
+}
+.controls div:nth-child(2),#progress::-webkit-slider-thumb, #progress{
+    background: #f31f1f;
+}
